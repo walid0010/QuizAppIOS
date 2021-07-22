@@ -13,6 +13,8 @@
 		D6135ED726A98F0900FA04A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6135ED526A98F0900FA04A4 /* Main.storyboard */; };
 		D6135ED926A98F0900FA04A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6135ED826A98F0900FA04A4 /* Assets.xcassets */; };
 		D6135EDC26A98F0900FA04A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6135EDA26A98F0900FA04A4 /* LaunchScreen.storyboard */; };
+		D6135EE426A9F00600FA04A4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6135EE326A9F00600FA04A4 /* Question.swift */; };
+		D6135EE926AA070300FA04A4 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6135EE826AA070300FA04A4 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D6135ED826A98F0900FA04A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6135EDB26A98F0900FA04A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6135EDD26A98F0900FA04A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6135EE326A9F00600FA04A4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D6135EE826AA070300FA04A4 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				D6135ECF26A98F0900FA04A4 /* AppDelegate.swift */,
 				D6135ED126A98F0900FA04A4 /* SceneDelegate.swift */,
-				D6135ED326A98F0900FA04A4 /* ViewController.swift */,
-				D6135ED526A98F0900FA04A4 /* Main.storyboard */,
+				D6135EE526AA063700FA04A4 /* Model */,
+				D6135EE626AA064800FA04A4 /* View */,
+				D6135EE726AA065200FA04A4 /* Controller */,
 				D6135ED826A98F0900FA04A4 /* Assets.xcassets */,
 				D6135EDA26A98F0900FA04A4 /* LaunchScreen.storyboard */,
 				D6135EDD26A98F0900FA04A4 /* Info.plist */,
 			);
 			path = QuizAppIOS;
+			sourceTree = "<group>";
+		};
+		D6135EE526AA063700FA04A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6135EE326A9F00600FA04A4 /* Question.swift */,
+				D6135EE826AA070300FA04A4 /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6135EE626AA064800FA04A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6135ED526A98F0900FA04A4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6135EE726AA065200FA04A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6135ED326A98F0900FA04A4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6135EE926AA070300FA04A4 /* QuizBrain.swift in Sources */,
 				D6135ED426A98F0900FA04A4 /* ViewController.swift in Sources */,
+				D6135EE426A9F00600FA04A4 /* Question.swift in Sources */,
 				D6135ED026A98F0900FA04A4 /* AppDelegate.swift in Sources */,
 				D6135ED226A98F0900FA04A4 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8LFKVJKW8;
 				INFOPLIST_FILE = QuizAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8LFKVJKW8;
 				INFOPLIST_FILE = QuizAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
